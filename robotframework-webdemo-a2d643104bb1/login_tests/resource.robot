@@ -8,8 +8,8 @@ Library           Selenium2Library
 
 *** Variables ***
 ${SERVER}         localhost:7272
-${BROWSER}        Firefox
-${DELAY}          0
+${BROWSER}        Chrome
+${DELAY}          0.1
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${LOGIN URL}      http://${SERVER}/

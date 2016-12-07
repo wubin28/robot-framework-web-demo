@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161206 23:23:20.216" generator="Robot 3.0 (Python 2.7.12 on darwin)">
+<suite source="/Users/twer/OOR/katas/remote/robot-framework-web-demo/WebDemo/login_tests" id="s1" name="Login Tests">
+<suite source="/Users/twer/OOR/katas/remote/robot-framework-web-demo/WebDemo/login_tests/gherkin_login.robot" id="s1-s1" name="Gherkin Login">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161206 23:23:20.324" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161206 23:23:20.347" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161206 23:23:20.347" starttime="20161206 23:23:20.344"></status>
+</kw>
+<msg timestamp="20161206 23:23:20.347" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161206 23:23:20.348" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20161206 23:23:20.348" starttime="20161206 23:23:20.323"></status>
+</kw>
+<status status="FAIL" endtime="20161206 23:23:20.348" starttime="20161206 23:23:20.323"></status>
+</kw>
+<status status="FAIL" endtime="20161206 23:23:20.348" starttime="20161206 23:23:20.323"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161206 23:23:20.349" starttime="20161206 23:23:20.349"></status>
+</kw>
+<status status="FAIL" endtime="20161206 23:23:20.349" critical="yes" starttime="20161206 23:23:20.322">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" endtime="20161206 23:23:20.350" starttime="20161206 23:23:20.240"></status>
+</suite>
+<suite source="/Users/twer/OOR/katas/remote/robot-framework-web-demo/WebDemo/login_tests/invalid_login.robot" id="s1-s2" name="Invalid Login">
+<kw type="setup" name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161206 23:23:20.357" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161206 23:23:20.369" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161206 23:23:20.369" starttime="20161206 23:23:20.367"></status>
+</kw>
+<msg timestamp="20161206 23:23:20.369" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161206 23:23:20.369" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20161206 23:23:20.369" starttime="20161206 23:23:20.357"></status>
+</kw>
+<status status="FAIL" endtime="20161206 23:23:20.369" starttime="20161206 23:23:20.357"></status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<status status="FAIL" endtime="20161206 23:23:20.370" critical="yes" starttime="20161206 23:23:20.370">Parent suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<status status="FAIL" endtime="20161206 23:23:20.371" critical="yes" starttime="20161206 23:23:20.370">Parent suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<status status="FAIL" endtime="20161206 23:23:20.371" critical="yes" starttime="20161206 23:23:20.371">Parent suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<status status="FAIL" endtime="20161206 23:23:20.372" critical="yes" starttime="20161206 23:23:20.372">Parent suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<status status="FAIL" endtime="20161206 23:23:20.373" critical="yes" starttime="20161206 23:23:20.373">Parent suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<status status="FAIL" endtime="20161206 23:23:20.374" critical="yes" starttime="20161206 23:23:20.373">Parent suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161206 23:23:20.375" starttime="20161206 23:23:20.374"></status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" endtime="20161206 23:23:20.375" starttime="20161206 23:23:20.351">Suite setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</suite>
+<suite source="/Users/twer/OOR/katas/remote/robot-framework-web-demo/WebDemo/login_tests/valid_login.robot" id="s1-s3" name="Valid Login">
+<test id="s1-s3-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161206 23:23:20.381" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161206 23:23:20.394" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161206 23:23:20.394" starttime="20161206 23:23:20.392"></status>
+</kw>
+<msg timestamp="20161206 23:23:20.394" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161206 23:23:20.394" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20161206 23:23:20.395" starttime="20161206 23:23:20.381"></status>
+</kw>
+<status status="FAIL" endtime="20161206 23:23:20.395" starttime="20161206 23:23:20.380"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161206 23:23:20.395" starttime="20161206 23:23:20.395"></status>
+</kw>
+<status status="FAIL" endtime="20161206 23:23:20.395" critical="yes" starttime="20161206 23:23:20.380">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20161206 23:23:20.396" starttime="20161206 23:23:20.376"></status>
+</suite>
+<status status="FAIL" endtime="20161206 23:23:20.397" starttime="20161206 23:23:20.218"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="8" pass="0">Critical Tests</stat>
+<stat fail="8" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="8" id="s1" name="Login Tests" pass="0">Login Tests</stat>
+<stat fail="1" id="s1-s1" name="Gherkin Login" pass="0">Login Tests.Gherkin Login</stat>
+<stat fail="6" id="s1-s2" name="Invalid Login" pass="0">Login Tests.Invalid Login</stat>
+<stat fail="1" id="s1-s3" name="Valid Login" pass="0">Login Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20161206 23:23:20.347" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161206 23:23:20.369" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161206 23:23:20.394" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+</errors>
+</robot>
